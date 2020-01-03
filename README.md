@@ -11,7 +11,9 @@ The <b>kamon-akka</b> module require you to start your application using the Asp
 
 ### Getting Started
 
-Kamon akka module is currently available for Scala 2.10, 2.11 and 2.12.
+Kamon akka module is currently available for Scala 2.10, 2.11, 2.12 and 2.13.
+
+**Since Kamon 2.0 there are no separate artifacts per akka version, the jar is released as kamon-akka**
 
 Supported releases and dependencies are shown below.
 
@@ -19,19 +21,20 @@ Supported releases and dependencies are shown below.
 |:---------------------:|:------:|:----------:|------------------|:------:|
 |  kamon-akka-2.4 1.1.0 | stable | 1.7+, 1.8+ | 2.11, 2.12       | 2.4.x  |
 |  kamon-akka-2.5 1.1.0 | stable | 1.8+       | 2.11, 2.12       | 2.5.x  |
+|  kamon-akka 2.0.1     | stable | 1.8+       | 2.11, 2.12, 2.13 | 2.6.x  |
 
 To get started with SBT, simply add the following to your `build.sbt` or `pom.xml`
 file:
 
 ```scala
-libraryDependencies += "io.kamon" %% "kamon-akka-2.5" % "1.1.0"
+libraryDependencies += "io.kamon" %% "kamon-akka" % "2.0.1"
 ```
 
 ```xml
 <dependency>
     <groupId>io.kamon</groupId>
-    <artifactId>kamon-akka-2.5_2.12</artifactId>
-    <version>1.1.0</version>
+    <artifactId>kamon-akka_2.12</artifactId>
+    <version>2.0.1</version>
 </dependency>
 ```
 
